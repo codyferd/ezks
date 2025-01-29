@@ -33,8 +33,7 @@ arising under this license shall be resolved in the courts of Jurisdiction.
 --
 
 Unless otherwise noted in the header of specific files, files in this
-distribution have the licence shown either above, or if it was made by
-the ZSH team, below.
+distribution have the licence shown above.
 
 However, note that certain shell functions are licensed under versions
 of the GNU General Public Licence.  Anyone distributing the shell as a
