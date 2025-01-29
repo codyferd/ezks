@@ -26,7 +26,7 @@
 
 subdir = .
 dir_top = .
-SUBDIRS = Doc Etc Src Test
+SUBDIRS = Etc Src Test
 
 @VERSION_MK@
 
@@ -50,12 +50,6 @@ all: config.h config.modules
 prep:
 	@cd Src && $(MAKE) $(MAKEDEFS) $@
 
-META-FAQ: FORCE
-	@cd Doc && $(MAKE) $(MAKEDEFS) ../META-FAQ
-
-dvi ps html info pdf:
-	@cd Doc && $(MAKE) $(MAKEDEFS) $@
-
 # ========== DEPENDENCIES FOR INSTALLING ==========
 
 # install stripped
@@ -73,14 +67,6 @@ install.bin uninstall.bin:
 # install/uninstall just the modules
 install.modules uninstall.modules:
 	@cd Src && $(MAKE) $(MAKEDEFS) $@
-
-# install/uninstall just the man pages
-install.man uninstall.man:
-	@cd Doc && $(MAKE) $(MAKEDEFS) $@
-
-# install/uninstall just the runhelp files
-install.runhelp uninstall.runhelp:
-	@cd Doc && $(MAKE) $(MAKEDEFS) $@
 
 # install/uninstall just the shell functions
 install.fns:
@@ -106,14 +92,6 @@ uninstall.fns:
 	  $(SHELL) $(sdir_top)/Config/uninstallfns.sh || exit 1; \
 	fi; \
 	exit 0
-
-# install/uninstall just the info pages
-install.info uninstall.info:
-	@cd Doc && $(MAKE) $(MAKEDEFS) $@
-
-# install/uninstall just the HTML manual
-install.html uninstall.html:
-	@cd Doc && $(MAKE) $(MAKEDEFS) $@
 
 # ========== DEPENDENCIES FOR TESTING ==========
 check test:
