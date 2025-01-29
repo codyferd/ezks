@@ -26,7 +26,7 @@
 
 subdir = .
 dir_top = .
-SUBDIRS = Doc Etc Src Test
+SUBDIRS = Etc Src Test
 
 @VERSION_MK@
 
@@ -42,7 +42,7 @@ INSTALL         = @INSTALL@
 
 # default target
 all: config.h config.modules
-	@for subdir in Src Doc; do \
+	@for subdir in Src; do \
 	  (cd $$subdir && $(MAKE) $(MAKEDEFS) $@) || exit 1; \
 	done
 
