@@ -29,7 +29,6 @@ using, copying, or distributing the Software.
 Jurisdiction, excluding its conflict-of-laws principles. Any disputes
 arising under this license shall be resolved in the courts of Jurisdiction.
 
-
 --
 
 Unless otherwise noted in the header of specific files, files in this
