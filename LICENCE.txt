@@ -31,6 +31,11 @@ arising under this license shall be resolved in the courts of Jurisdiction.
 
 ----------
 
+Any software with the heading of GNU is licensed under the GNU GPL, listed
+in the comments of the code.
+
+----------
+
 The Z Shell is copyright (c) 1992-2017 Paul Falstad, Richard Coleman,
 Zoltán Hidvégi, Andrew Main, Peter Stephenson, Sven Wischnowsky, and
 others.  All rights reserved.  Individual authors, whether or not
